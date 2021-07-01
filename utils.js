@@ -9,14 +9,26 @@ export function didUserWin(userThrow, compThrow){
         return 'win';  
     }
     else if (userThrow === paper && compThrow === rock){
-        return 'win';  
-          
-        return 'lose';
-}
+        return 'win'; 
 
-const scissors = document.getElementById('scissors');
-const rock = document.getElementById('rock');
-const paper = document.getElementById('paper');
+    }
+    else if (userThrow === rock && compThrow === paper){
+        return 'lose';  
+
+    }        
+    else if (userThrow === scissors && compThrow === rock){
+        return 'lose'; 
+
+    }    
+    else if (userThrow === paper && compThrow === scissors){
+        return 'lose';             
+          
+    }
+
+
+// const scissors = document.getElementById('scissors');
+// const rock = document.getElementById('rock');
+// const paper = document.getElementById('paper');
 
 // userThrow
 // rock, paper, scissors
