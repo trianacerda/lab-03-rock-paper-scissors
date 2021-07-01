@@ -29,33 +29,39 @@
                 <span>paper BEATS rock</span>
                 <span>scissors BEATS paper</span>
         </section>
-        <label>
-            rock
-            <input
-            name='rps-game'
-            type='radio'
-            value='rock'
-            checked
-            ><img src="./assets/the rock.jpeg">
-        </label>
-        <label>
-            paper
-            <input
-            name='rps-game'
-            type='radio'
-            value='paper'
-            ><img src="./assets/paper.jpeg">
-        </label>
-        <label>
-            scissors
-            <input
-            name='rps-game'
-            type='radio'
-            value='scissors'
-            ><img src="./assets/scissors.jpeg">
-        </label>
+        <section class='label1'>
+            <label id= 'label'>
+                rock
+                <img src="./assets/the rock.jpeg">
+                <input
+                name='rps-game'
+                type='radio'
+                value='rock'
+                checked
+                >
+            </label>
+            <label id ='label'>
+                paper
+                <img src="./assets/paper.jpeg">
+                <input
+                name='rps-game'
+                type='radio'
+                value='paper'
+                >
+            </label>
+            <label id='label'>
+                scissors
+                <input
+                name='rps-game'
+                type='radio'
+                value='scissors'
+                ><img src="./assets/scissors.jpeg">
+            </label>
+        </section>
         <button id='btn'>PLAY</button>
-        <div>Total Wins: <span id='total-win'>0</span></div>
+        <div>Total Wins: <span id='total-wins'>0</span></div>
+        <div>Total Losses: <span id='total-losses'>0</span></div>
+        <div>Total Draws: <span id='total-drwas'>0</span></div>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>

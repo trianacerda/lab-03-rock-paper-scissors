@@ -1,10 +1,22 @@
 export function didUserWin(userThrow, compThrow){
-    if (userThrow === compThrow)
-        return 'draw'
-
-    if else (userThrow )    
-
+    if (userThrow === compThrow){
+        return 'draw';
+    }
+    else if (userThrow === rock && compThrow === scissors){
+        return 'win';  
+    }
+    else if (userThrow === scissors && compThrow === paper){
+        return 'win';  
+    }
+    else if (userThrow === paper && compThrow === rock){
+        return 'win';  
+          
+        return 'lose';
 }
+
+const scissors = document.getElementById('scissors');
+const rock = document.getElementById('rock');
+const paper = document.getElementById('paper');
 
 // userThrow
 // rock, paper, scissors
