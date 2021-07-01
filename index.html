@@ -14,13 +14,20 @@
 
 <body>
     <header>
+        <h2>ROCK-PAPER-SCISSORS</h2>
         <div class="gutter-right logo">
             <img src="assets/big-logo.png" />
         </div>
     </header>
     <main>
         <section class='main-section'>
-            <h2>ROCK-PAPER-SCISSORS</h2>
+            <h2>HOW TO PLAY</h2>
+                <span>1. select rock, paper, or scissor</span>
+                <span>2. click play</span>
+            <h2>RULES OF THE GAME</h2>
+                <span>rock BEATS scissors</span>
+                <span>paper BEATS rock</span>
+                <span>scissors BEATS paper</span>
         </section>
         <label>
             rock
@@ -29,7 +36,7 @@
             type='radio'
             value='rock'
             checked
-            >
+            ><img src="./assets/the rock.jpeg">
         </label>
         <label>
             paper
@@ -37,7 +44,7 @@
             name='rps-game'
             type='radio'
             value='paper'
-            >
+            ><img src="./assets/paper.jpeg">
         </label>
         <label>
             scissors
@@ -45,8 +52,10 @@
             name='rps-game'
             type='radio'
             value='scissors'
-            >
+            ><img src="./assets/scissors.jpeg">
         </label>
+        <button id='btn'>PLAY</button>
+        <div>Total Wins: <span id='total-win'>0</span></div>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
