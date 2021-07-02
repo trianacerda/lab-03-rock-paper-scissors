@@ -9,11 +9,12 @@ const lossesSpan = document.getElementById('total-losses');
 const drawsSpan = document.getElementById('total-draws');
 const message = document.getElementById('message');
 const resetBtn = document.getElementById('reset-btn');
+const resetSpan = document.getElementById('reset-num');
 
 let wins = 0;
 let losses = 0;
 let draws = 0;
-
+let resets = 0;
 playBtn.addEventListener('click', ()=>{
     const selected = document.querySelector('input[type=radio]:checked');
     const userThrow = selected.value;
@@ -53,6 +54,11 @@ resetBtn.addEventListener('click', ()=>{
     wins = 0;
     losses = 0;
     draws = 0;
-    res
+    resets++;
+    resetSpan.textContent = resets;
+    winsSpan.textContent = wins;
+    lossesSpan.textContent = losses;
+    drawsSpan.textContent = draws;
+
     
 });  
