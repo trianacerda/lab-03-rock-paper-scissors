@@ -1,4 +1,4 @@
-import { didUserWin } from '../utils.js';
+import { didUserWin, numTest } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -18,4 +18,10 @@ test('testing user draw', (expect) => {
     const expected = ('draw');
     const rockDraw = didUserWin('rock', 'rock');
     expect.equal(rockDraw, expected);
+});
+
+test('testing what is returned from random num fuction', (expect) => {
+    const expected = 'string';
+    const random = typeof(numTest());
+    expect.equal(random, expected);
 });

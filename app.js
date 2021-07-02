@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { didUserWin } from './utils.js';
+import { didUserWin, numTest } from './utils.js';
 // initialize state
 
 
@@ -18,17 +18,9 @@ let resets = 0;
 playBtn.addEventListener('click', ()=>{
     const selected = document.querySelector('input[type=radio]:checked');
     const userThrow = selected.value;
-    const randomNum = Math.floor(Math.random() * 3);
-    let compThrow = 'rock';
-    if (randomNum === 1) {
-        compThrow = 'paper';
-    }
-    else if (randomNum === 2) {
-        compThrow = 'scissors';
-    }
+    const compThrow = numTest();
     const isWinner = didUserWin(userThrow, compThrow);
-    //console.log(userThrow, compThrow);
-
+    
 
     if (isWinner === 'win'){
         message.textContent = `computer picked ${compThrow}, you WIN!`;

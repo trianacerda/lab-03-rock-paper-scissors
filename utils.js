@@ -25,4 +25,14 @@ export function didUserWin(userThrow, compThrow){
           
     }
 }
-
+export function numTest() {
+    const randomNum = Math.floor(Math.random() * 3);
+    let compThrow = 'rock';
+    if (randomNum === 1) {
+        compThrow = 'paper';
+    }
+    else if (randomNum === 2) {
+        compThrow = 'scissors';
+    }
+    return compThrow;
+}
