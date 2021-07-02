@@ -2,29 +2,29 @@ export function didUserWin(userThrow, compThrow){
     if (userThrow === compThrow){
         return 'draw';
     }
-    else if (userThrow === rock && compThrow === scissors){
+    else if (userThrow === 'rock' && compThrow === 'scissors'){
         return 'win';  
     }
-    else if (userThrow === scissors && compThrow === paper){
+    else if (userThrow === 'scissors' && compThrow === 'paper'){
         return 'win';  
     }
-    else if (userThrow === paper && compThrow === rock){
+    else if (userThrow === 'paper' && compThrow === 'rock'){
         return 'win'; 
 
     }
-    else if (userThrow === rock && compThrow === paper){
+    else if (userThrow === 'rock' && compThrow === 'paper'){
         return 'lose';  
 
     }        
-    else if (userThrow === scissors && compThrow === rock){
+    else if (userThrow === 'scissors' && compThrow === 'rock'){
         return 'lose'; 
 
     }    
-    else if (userThrow === paper && compThrow === scissors){
+    else if (userThrow === 'paper' && compThrow === 'scissors'){
         return 'lose';             
           
     }
-
+}
 
 // const scissors = document.getElementById('scissors');
 // const rock = document.getElementById('rock');
@@ -44,4 +44,4 @@ export function didUserWin(userThrow, compThrow){
 //    if computerThrow is rock return 'win'
 // if the user throw scissors
 //    if computerThrow is paper return 'win'
-// return 'lose'
+// return 'lose';
