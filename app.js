@@ -4,12 +4,10 @@ import { didUserWin } from './utils.js';
 
 
 const playBtn = document.getElementById('btn');
-const scissors = document.getElementById('scissors');
-const rock = document.getElementById('rock');
-const paper = document.getElementById('paper'); 
 const winsSpan = document.getElementById('total-wins');
-const lossesSpan = document.getElementById('losses-wins');
-const drawsSpan = document.getElementById('draws-wins');
+const lossesSpan = document.getElementById('total-losses');
+const drawsSpan = document.getElementById('total-draws');
+const resetBtn = document.getElementById('reset-btn');
 
 let wins = 0;
 let losses = 0;
@@ -46,7 +44,8 @@ playBtn.addEventListener('click', ()=>{
 
 });   
 
-resetBtn.addEventListener('click', ()=>{
-    btn.disabled = false;
-    resetBtn.style.visibility = 'hidden';
-});  
+// resetBtn.addEventListener('click', ()=>{
+//     function clearResult(){
+//         document.getElementById('reset-btn').value = ''
+//     }    
+// });  
